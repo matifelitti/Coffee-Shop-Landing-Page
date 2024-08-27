@@ -17,14 +17,6 @@
     <nav class="bg-orange-950 shadow-lg shadow-orange-950/100">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center justify-between py-4">
-                <!-- Toggle Button -->
-                <button class="lg:hidden text-white focus:outline-none ml-4" id="menu-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
 
                 <!-- Logo and Links Container -->
                 <div class="flex items-center w-full justify-between lg:justify-center">
@@ -32,6 +24,15 @@
                     <div class="flex-shrink-0">
                         <img class="w-28 h-28 cursor-pointer" src="logo.png" alt="logo">
                     </div>
+
+                    <!-- Toggle Button -->
+                    <button class="lg:hidden text-white focus:outline-none ml-4" id="menu-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
 
                     <!-- Links -->
                     <div class="hidden lg:flex gap-x-7 p-6 font-bold text-base/7 text-orange-100">
@@ -62,8 +63,8 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="lg:hidden fixed inset-0 bg-orange-950 bg-opacity-80 z-50 hidden" id="mobile-menu">
-        <div class="flex flex-col items-center mt-20">
+    <div class="lg:hidden sticky top-0 inset-0 bg-orange-950 bg-opacity-80 z-50 hidden" id="mobile-menu">
+        <div class="flex flex-col items-center">
             <a href="#" class="p-4 text-white text-lg font-bold">HOME</a>
             <a href="#" class="p-4 text-white text-lg font-bold">GRAINS</a>
             <a href="#" class="p-4 text-white text-lg font-bold">PRODUCTS</a>
