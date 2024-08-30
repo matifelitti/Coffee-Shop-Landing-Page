@@ -8,75 +8,75 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 </head>
 
 <body class="bg-orange-100 font-[Poppins]">
+
+    <!-- Navigation Bar -->
     <nav class="bg-orange-950 shadow-lg shadow-orange-950/100">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex items-center justify-between py-4">
-
-                <!-- Logo and Links Container -->
-                <div class="flex items-center w-full justify-between lg:justify-center">
-                    <!-- Logo -->
-                    <div class="flex-shrink-0">
-                        <img class="w-28 h-28 cursor-pointer" src="logo.png" alt="logo">
-                    </div>
-
-                    <!-- Toggle Button -->
-                    <button class="lg:hidden text-white focus:outline-none ml-4" id="menu-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </button>
-
-                    <!-- Links -->
-                    <div class="hidden lg:flex gap-x-7 p-6 font-bold text-base/7 text-orange-100">
-                        <div
-                            class="p-3 no-underline hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white font-bold cursor-pointer">
-                            HOME
-                        </div>
-                        <div
-                            class="p-3 no-underline hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white font-bold cursor-pointer">
-                            GRAINS
-                        </div>
-                        <div
-                            class="p-3 no-underline hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white font-bold cursor-pointer">
-                            PRODUCTS
-                        </div>
-                        <div
-                            class="p-3 no-underline hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white font-bold cursor-pointer">
-                            BLOG
-                        </div>
-                        <div
-                            class="p-3 no-underline hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white font-bold cursor-pointer">
-                            ABOUT
-                        </div>
-                    </div>
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <img class="w-28 h-28 cursor-pointer" src="logo.png" alt="logo">
                 </div>
+
+                <!-- Desktop Menu Links -->
+                <div class="hidden lg:flex items-center space-x-7 text-orange-100 font-bold text-base">
+                    <a href="#"
+                        class="hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white">HOME</a>
+                    <a href="#"
+                        class="hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white">GRAINS</a>
+                    <a href="#"
+                        class="hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white">PRODUCTS</a>
+                    <a href="#"
+                        class="hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white">BLOG</a>
+                    <a href="#"
+                        class="hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white">ABOUT</a>
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button class="lg:hidden text-white focus:outline-none" id="menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="lg:hidden sticky top-0 inset-0 bg-orange-950 bg-opacity-80 z-50 hidden" id="mobile-menu">
-        <div class="flex flex-col items-center">
-            <a href="#" class="p-4 text-white text-lg font-bold">HOME</a>
-            <a href="#" class="p-4 text-white text-lg font-bold">GRAINS</a>
-            <a href="#" class="p-4 text-white text-lg font-bold">PRODUCTS</a>
-            <a href="#" class="p-4 text-white text-lg font-bold">BLOG</a>
-            <a href="#" class="p-4 text-white text-lg font-bold">ABOUT</a>
+    <div class="lg:hidden fixed inset-0 bg-orange-950 z-50 hidden" id="mobile-menu">
+        <div class="flex flex-col items-center mt-16 overflow-y-auto py-6 px-4 space-y-6">
+            <a href="#" class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2">HOME</a>
+            <a href="#" class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2">GRAINS</a>
+            <a href="#"
+                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2">PRODUCTS</a>
+            <a href="#" class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2">BLOG</a>
+            <a href="#" class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2">ABOUT</a>
         </div>
     </div>
 
-    <!-- Page content -->
-    <div class="py-32 text-center">
-        <h1 class="font-extrabold text-2xl">Coffee</h1>
-    </div>
+    <!-- Page Content -->
+    <main class="relative h-screen bg-cover" style="background-image: url('coffee.png');">
+        <div
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-end px-4 md:px-8 lg:px-12 py-6 lg:py-12">
+            <div
+                class="text-right text-white p-6 md:p-8 lg:p-12 bg-opacity-90 rounded-lg shadow-lg max-w-xs md:max-w-sm lg:max-w-md">
+                <h1 class="text-center text-2xl md:text-lg lg:text-2xl font-extrabold mb-4">Do you want a
+                    cup of coffee?
+                </h1>
+                <p class="text-center text-base md:text-lg lg:text-lg">Experience the rich flavors
+                    and aromatic
+                    sensations of our
+                    premium coffee selections.</p>
+            </div>
+        </div>
+    </main>
 
     <script>
         const menuToggle = document.getElementById('menu-toggle');
