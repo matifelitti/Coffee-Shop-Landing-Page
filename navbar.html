@@ -15,12 +15,12 @@
 <body class="bg-orange-100 font-[Poppins]">
 
     <!-- Navigation Bar -->
-    <nav class="bg-orange-950 shadow-lg shadow-orange-950/100">
-        <div class="max-w-6xl mx-auto px-6">
+    <nav class="bg-orange-950 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
             <div class="flex items-center justify-between py-4">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <img class="w-28 h-28 cursor-pointer" src="logo.png" alt="logo">
+                    <img class="w-24 h-24 lg:w-28 lg:h-28 cursor-pointer" src="logo.png" alt="logo">
                 </div>
 
                 <!-- Desktop Menu Links -->
@@ -52,27 +52,27 @@
     <!-- Mobile Menu -->
     <div class="lg:hidden fixed inset-0 bg-orange-950 z-50 hidden" id="mobile-menu">
         <div class="flex flex-col items-center mt-16 overflow-y-auto py-6 px-4 space-y-6">
-            <a href="#" class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2">HOME</a>
-            <a href="#" class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2">GRAINS</a>
             <a href="#"
-                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2">PRODUCTS</a>
-            <a href="#" class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2">BLOG</a>
-            <a href="#" class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2">ABOUT</a>
+                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2 nav_link">HOME</a>
+            <a href="#"
+                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2 nav_link">GRAINS</a>
+            <a href="#"
+                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2 nav_link">PRODUCTS</a>
+            <a href="#"
+                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2 nav_link">BLOG</a>
+            <a href="#"
+                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2 nav_link">ABOUT</a>
         </div>
     </div>
 
     <!-- Page Content -->
-    <main class="relative h-screen bg-cover" style="background-image: url('coffee.png');">
+    <main class="relative h-screen bg-cover bg-center" style="background-image: url('coffee.png');">
         <div
-            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-end px-4 md:px-8 lg:px-12 py-6 lg:py-12">
+            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center px-4 md:px-8 lg:px-12 py-6 lg:py-12">
             <div
-                class="text-right text-white p-6 md:p-8 lg:p-12 bg-opacity-90 rounded-lg shadow-lg max-w-xs md:max-w-sm lg:max-w-md">
-                <h1 class="text-center text-2xl md:text-lg lg:text-2xl font-extrabold mb-4">Do you want a
-                    cup of coffee?
-                </h1>
-                <p class="text-center text-base md:text-lg lg:text-lg">Experience the rich flavors
-                    and aromatic
-                    sensations of our
+                class="text-center text-white p-6 md:p-8 lg:p-12 bg-opacity-90 rounded-lg shadow-lg max-w-xs md:max-w-sm lg:max-w-md">
+                <h1 class="text-2xl md:text-lg lg:text-2xl font-extrabold mb-4">Do you want a cup of coffee?</h1>
+                <p class="text-base md:text-lg lg:text-lg">Experience the rich flavors and aromatic sensations of our
                     premium coffee selections.</p>
             </div>
         </div>
@@ -81,9 +81,16 @@
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelectorAll('.nav_link');
 
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
         });
     </script>
 
