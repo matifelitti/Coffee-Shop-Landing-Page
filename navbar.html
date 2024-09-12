@@ -10,31 +10,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
-<body class="bg-orange-100 font-[Poppins]">
+<body class="bg-orange-100">
 
     <!-- Navigation Bar -->
-    <nav class="bg-orange-950 shadow-lg">
-        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+    <nav class="bg-orange-950 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between py-4">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <img class="w-24 h-24 lg:w-28 lg:h-28 cursor-pointer" src="logo.png" alt="logo">
+                    <img class="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 cursor-pointer" src="logo.png" alt="logo">
                 </div>
 
                 <!-- Desktop Menu Links -->
-                <div class="hidden lg:flex items-center space-x-7 text-orange-100 font-bold text-base">
+                <div class="hidden lg:flex items-center space-x-8 text-orange-100 font-semibold text-base">
                     <a href="#"
-                        class="hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white">HOME</a>
+                        class="hover:underline underline-offset-4 decoration-2 decoration-white hover:text-white">HOME</a>
                     <a href="#"
-                        class="hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white">GRAINS</a>
+                        class="hover:underline underline-offset-4 decoration-2 decoration-white hover:text-white">GRAINS</a>
                     <a href="#"
-                        class="hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white">PRODUCTS</a>
+                        class="hover:underline underline-offset-4 decoration-2 decoration-white hover:text-white">PRODUCTS</a>
                     <a href="#"
-                        class="hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white">BLOG</a>
+                        class="hover:underline underline-offset-4 decoration-2 decoration-white hover:text-white">BLOG</a>
                     <a href="#"
-                        class="hover:underline underline-offset-8 decoration-2 decoration-white hover:text-white">ABOUT</a>
+                        class="hover:underline underline-offset-4 decoration-2 decoration-white hover:text-white">ABOUT</a>
                 </div>
 
                 <!-- Mobile Menu Toggle Button -->
@@ -50,18 +55,28 @@
     </nav>
 
     <!-- Mobile Menu -->
-    <div class="lg:hidden fixed inset-0 bg-orange-950 z-50 hidden" id="mobile-menu">
-        <div class="flex flex-col items-center mt-16 overflow-y-auto py-6 px-4 space-y-6">
-            <a href="#"
-                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2 nav_link">HOME</a>
-            <a href="#"
-                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2 nav_link">GRAINS</a>
-            <a href="#"
-                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2 nav_link">PRODUCTS</a>
-            <a href="#"
-                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2 nav_link">BLOG</a>
-            <a href="#"
-                class="text-white text-lg font-bold hover:underline underline-offset-8 decoration-2 nav_link">ABOUT</a>
+    <div class="lg:hidden fixed inset-0 bg-orange-950 z-50 hidden overflow-hidden" id="mobile-menu">
+        <div class="flex flex-col h-full p-6">
+            <!-- Close Button -->
+            <button class="text-white text-3xl self-end" id="menu-close">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <!-- Menu Items -->
+            <div class="flex flex-col justify-center flex-1 space-y-6 mt-16 text-center">
+                <a href="#"
+                    class="text-white text-2xl font-bold hover:underline underline-offset-4 decoration-2 nav_link">HOME</a>
+                <a href="#"
+                    class="text-white text-2xl font-bold hover:underline underline-offset-4 decoration-2 nav_link">GRAINS</a>
+                <a href="#"
+                    class="text-white text-2xl font-bold hover:underline underline-offset-4 decoration-2 nav_link">PRODUCTS</a>
+                <a href="#"
+                    class="text-white text-2xl font-bold hover:underline underline-offset-4 decoration-2 nav_link">BLOG</a>
+                <a href="#"
+                    class="text-white text-2xl font-bold hover:underline underline-offset-4 decoration-2 nav_link">ABOUT</a>
+            </div>
         </div>
     </div>
 
@@ -71,8 +86,8 @@
             class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center px-4 md:px-8 lg:px-12 py-6 lg:py-12">
             <div
                 class="text-center text-white p-6 md:p-8 lg:p-12 bg-opacity-90 rounded-lg shadow-lg max-w-xs md:max-w-sm lg:max-w-md">
-                <h1 class="text-2xl md:text-lg lg:text-2xl font-extrabold mb-4">Do you want a cup of coffee?</h1>
-                <p class="text-base md:text-lg lg:text-lg">Experience the rich flavors and aromatic sensations of our
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4">Do you want a cup of coffee?</h1>
+                <p class="text-base md:text-lg lg:text-xl">Experience the rich flavors and aromatic sensations of our
                     premium coffee selections.</p>
             </div>
         </div>
@@ -81,10 +96,15 @@
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
+        const menuClose = document.getElementById('menu-close');
         const navLinks = document.querySelectorAll('.nav_link');
 
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
         });
 
         navLinks.forEach(link => {
