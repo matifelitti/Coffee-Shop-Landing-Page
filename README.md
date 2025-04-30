@@ -1,28 +1,45 @@
-# 🚀 Tailwind CSS Responsive Navbar
+# Tailwind CSS Navbar for Coffee Shop Landing Page ☕
 
-This repository features a modern, responsive navigation bar built with **Tailwind CSS**. It's designed for easy integration into any project, offering a clean and stylish look across both desktop and mobile devices.
+A clean and responsive **Tailwind CSS** navigation bar and landing page design for a coffee shop website.
 
 ## ✨ Features
 
-- **Fully Responsive**  
-  Seamlessly adapts to all screen sizes, from desktops to smartphones.
+- Responsive navbar with mobile menu toggle
+- Smooth scrolling between sections
+- Hover effects to highlight product cards
+- Modern, minimal, mobile-first layout
+- External images integration
+- Built with Tailwind CSS for fast and elegant styling
 
-- **Customizable**  
-  Easily adjust colors, spacing, typography, and layout using Tailwind’s utility classes to match your project’s branding.
+## 📂 Project Structure
 
-- **Interactive Mobile Menu**  
-  Includes lightweight JavaScript to toggle the mobile menu for a smooth user experience.
+```
+📁 project-folder/
+├── index.html
+├── /assets
+│   ├── accesories.jpeg
+│   ├── arabica.jpeg
+│   └── beans.jpeg
+│   └── coffee.jpeg
+│   └── ground.jpeg
+│   └── liberica.jpeg
+│   └── logo.png
+│   └── robusta.jpeg
+└── README.md
+```
 
-## 🔧 Installation
+## 🚀 Technologies Used
+
+- HTML5
+- Tailwind CSS 3.x
+- Vanilla JavaScript (for menu toggle and smooth scroll)
+
+## 🛠 How to Use
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/matifelitti/tailwind-navbar.git
+   git clone https://github.com/matifelitti/coffee-shop-landing.git
    ```
-2. Add the component to your project.
-3. Customize it with Tailwind classes to fit your design!
+2. Open `index.html` in your browser.
 
-## 🛠 Technologies Used
-
-- [Tailwind CSS](https://tailwindcss.com/)
-- Vanilla JavaScript (for mobile menu toggle)
+_No installations or dependencies required._
