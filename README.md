@@ -38,7 +38,7 @@ A clean and responsive **Tailwind CSS** navigation bar and landing page design f
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/matifelitti/coffee-shop-landing.git
+   git clone https://github.com/matifelitti/Tailwind-CSS-Navbar
    ```
 2. Open `index.html` in your browser.
 
