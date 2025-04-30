@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Navbar</title>
+    <title>Coffee Shop Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
         }
@@ -23,26 +25,16 @@
     <nav class="bg-orange-950 shadow-md">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between py-4">
-                <!-- Logo -->
                 <div class="flex-shrink-0">
                     <img class="w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 cursor-pointer" src="logo.png" alt="logo">
                 </div>
-
-                <!-- Desktop Menu Links -->
                 <div class="hidden lg:flex items-center space-x-8 text-orange-100 font-semibold text-base">
-                    <a href="#"
-                        class="hover:underline underline-offset-4 decoration-2 decoration-white hover:text-white">HOME</a>
-                    <a href="#"
-                        class="hover:underline underline-offset-4 decoration-2 decoration-white hover:text-white">GRAINS</a>
-                    <a href="#"
-                        class="hover:underline underline-offset-4 decoration-2 decoration-white hover:text-white">PRODUCTS</a>
-                    <a href="#"
-                        class="hover:underline underline-offset-4 decoration-2 decoration-white hover:text-white">BLOG</a>
-                    <a href="#"
-                        class="hover:underline underline-offset-4 decoration-2 decoration-white hover:text-white">ABOUT</a>
+                    <a href="#home" class="hover:underline">HOME</a>
+                    <a href="#grains" class="hover:underline">GRAINS</a>
+                    <a href="#products" class="hover:underline">PRODUCTS</a>
+                    <a href="#blog" class="hover:underline">BLOG</a>
+                    <a href="#about" class="hover:underline">ABOUT</a>
                 </div>
-
-                <!-- Mobile Menu Toggle Button -->
                 <button class="lg:hidden text-white focus:outline-none" id="menu-toggle">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6">
@@ -66,38 +58,122 @@
             </button>
             <!-- Menu Items -->
             <div class="flex flex-col justify-center flex-1 space-y-6 mt-16 text-center">
-                <a href="#"
-                    class="text-white text-2xl font-bold hover:underline underline-offset-4 decoration-2 nav_link">HOME</a>
-                <a href="#"
-                    class="text-white text-2xl font-bold hover:underline underline-offset-4 decoration-2 nav_link">GRAINS</a>
-                <a href="#"
-                    class="text-white text-2xl font-bold hover:underline underline-offset-4 decoration-2 nav_link">PRODUCTS</a>
-                <a href="#"
-                    class="text-white text-2xl font-bold hover:underline underline-offset-4 decoration-2 nav_link">BLOG</a>
-                <a href="#"
-                    class="text-white text-2xl font-bold hover:underline underline-offset-4 decoration-2 nav_link">ABOUT</a>
+                <a href="#home" class="text-white text-2xl font-bold hover:underline nav-link">HOME</a>
+                <a href="#grains" class="text-white text-2xl font-bold hover:underline nav-link">GRAINS</a>
+                <a href="#products" class="text-white text-2xl font-bold hover:underline nav-link">PRODUCTS</a>
+                <a href="#blog" class="text-white text-2xl font-bold hover:underline nav-link">BLOG</a>
+                <a href="#about" class="text-white text-2xl font-bold hover:underline nav-link">ABOUT</a>
             </div>
         </div>
     </div>
 
-    <!-- Page Content -->
-    <main class="relative h-screen bg-cover bg-center" style="background-image: url('coffee.png');">
-        <div
-            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center px-4 md:px-8 lg:px-12 py-6 lg:py-12">
-            <div
-                class="text-center text-white p-6 md:p-8 lg:p-12 bg-opacity-90 rounded-lg shadow-lg max-w-xs md:max-w-sm lg:max-w-md">
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4">Do you want a cup of coffee?</h1>
-                <p class="text-base md:text-lg lg:text-xl">Experience the rich flavors and aromatic sensations of our
-                    premium coffee selections.</p>
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen bg-cover bg-center" style="background-image: url('coffee.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <div class="text-center text-white p-8 bg-opacity-90 rounded-lg">
+                <h1 class="text-4xl font-extrabold mb-4">Do you want a cup of coffee?</h1>
+                <p class="text-lg">Experience the rich flavors and aromatic sensations of our premium coffee selections.
+                </p>
             </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Grains Section -->
+    <section id="grains" class="py-16 bg-orange-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Grains</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
+                    <img src="arabica.jpeg" alt="Arabica" class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Arabica</h3>
+                    <p>Sweet, soft taste with hints of chocolate and sugar.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
+                    <img src="robusta.jpeg" alt="Robusta" class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Robusta</h3>
+                    <p>Strong, harsh flavor with a grainy or nutty profile.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
+                    <img src="liberica.jpeg" alt="Liberica" class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Liberica</h3>
+                    <p>Unique smoky flavor with floral and fruity notes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
+                    <img src="beans.jpeg" alt="Coffee Beans" class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Coffee Beans</h3>
+                    <p>Freshly roasted premium coffee beans for the perfect brew.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
+                    <img src="ground.jpeg" alt="Ground Coffee" class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Ground Coffee</h3>
+                    <p>Ready-to-brew ground coffee with rich aromas and flavor.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
+                    <img src="accessories.jpeg" alt="Accessories"
+                        class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                    <h3 class="text-xl font-semibold mb-2">Accessories</h3>
+                    <p>Everything you need from grinders to coffee makers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-orange-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Latest Blog Posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
+                    <h3 class="text-xl font-semibold mb-2">The Art of Brewing</h3>
+                    <p class="mb-4">Discover the best brewing techniques for every type of coffee lover.</p>
+                    <a href="#" class="text-orange-700 font-bold hover:underline">Read More</a>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-lg shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
+                    <h3 class="text-xl font-semibold mb-2">Health Benefits of Coffee</h3>
+                    <p class="mb-4">Learn how coffee can benefit your mind, body, and spirit.</p>
+                    <a href="#" class="text-orange-700 font-bold hover:underline">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">About Us</h2>
+            <p class="text-lg">At our coffee shop, passion for coffee drives everything we do. From sourcing the finest
+                beans to crafting the perfect brew, we are dedicated to providing you with the best coffee experience
+                possible. Visit us and discover your new favorite cup.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-orange-950 py-6 text-center text-white">
+        <p>&copy; 2025 Coffee Shop. All rights reserved.</p>
+    </footer>
 
     <script>
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuClose = document.getElementById('menu-close');
-        const navLinks = document.querySelectorAll('.nav_link');
+        const navLinks = document.querySelectorAll('.nav-link');
 
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
