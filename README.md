@@ -1,6 +1,6 @@
-# Tailwind CSS Navbar for Coffee Shop Landing Page ☕
+# ☕ Tailwind CSS Coffee Shop Landing Page
 
-A clean and responsive **Tailwind CSS** navigation bar and landing page design for a coffee shop website.
+A clean and responsive **Tailwind CSS** landing page design for a coffee shop website.
 
 ## ✨ Features
 
@@ -15,17 +15,16 @@ A clean and responsive **Tailwind CSS** navigation bar and landing page design f
 
 ```
 📁 project-folder/
-├── index.html
-├── /assets
-│   ├── accesories.jpeg
-│   ├── arabica.jpeg
-│   └── beans.jpeg
-│   └── coffee.jpeg
-│   └── ground.jpeg
-│   └── liberica.jpeg
-│   └── logo.png
-│   └── robusta.jpeg
+├── accesories.jpeg
+├── arabica.jpeg
+└── beans.jpeg
+└── coffee.jpeg
+└── ground.jpeg
+└── index.html
+└── liberica.jpeg
+└── logo.png
 └── README.md
+└── robusta.jpeg
 ```
 
 ## 🚀 Technologies Used
@@ -38,7 +37,7 @@ A clean and responsive **Tailwind CSS** navigation bar and landing page design f
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/matifelitti/Tailwind-CSS-Navbar
+   git clone https://github.com/matifelitti/Coffee-Shop-Landing-Page
    ```
 2. Open `index.html` in your browser.
 
