@@ -8,15 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-orange-100">
@@ -85,19 +77,22 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div
                     class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
-                    <img src="arabica.jpeg" alt="Arabica" class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                    <img src="arabica.jpeg" alt="Arabica"
+                        class="mx-auto mb-4 w-32 h-32 object-cover rounded-full scroll-fade">
                     <h3 class="text-xl font-semibold mb-2">Arabica</h3>
                     <p>Sweet, soft taste with hints of chocolate and sugar.</p>
                 </div>
                 <div
                     class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
-                    <img src="robusta.jpeg" alt="Robusta" class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                    <img src="robusta.jpeg" alt="Robusta"
+                        class="mx-auto mb-4 w-32 h-32 object-cover rounded-full scroll-fade">
                     <h3 class="text-xl font-semibold mb-2">Robusta</h3>
                     <p>Strong, harsh flavor with a grainy or nutty profile.</p>
                 </div>
                 <div
                     class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
-                    <img src="liberica.jpeg" alt="Liberica" class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                    <img src="liberica.jpeg" alt="Liberica"
+                        class="mx-auto mb-4 w-32 h-32 object-cover rounded-full scroll-fade">
                     <h3 class="text-xl font-semibold mb-2">Liberica</h3>
                     <p>Unique smoky flavor with floral and fruity notes.</p>
                 </div>
@@ -112,20 +107,22 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div
                     class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
-                    <img src="beans.jpeg" alt="Coffee Beans" class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                    <img src="beans.jpeg" alt="Coffee Beans"
+                        class="mx-auto mb-4 w-32 h-32 object-cover rounded-full scroll-fade">
                     <h3 class="text-xl font-semibold mb-2">Coffee Beans</h3>
                     <p>Freshly roasted premium coffee beans for the perfect brew.</p>
                 </div>
                 <div
                     class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
-                    <img src="ground.jpeg" alt="Ground Coffee" class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                    <img src="ground.jpeg" alt="Ground Coffee"
+                        class="mx-auto mb-4 w-32 h-32 object-cover rounded-full scroll-fade">
                     <h3 class="text-xl font-semibold mb-2">Ground Coffee</h3>
                     <p>Ready-to-brew ground coffee with rich aromas and flavor.</p>
                 </div>
                 <div
                     class="bg-white p-6 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105 hover:shadow-lg hover:border-2 hover:border-orange-950">
                     <img src="accessories.jpeg" alt="Accessories"
-                        class="mx-auto mb-4 w-32 h-32 object-cover rounded-full">
+                        class="mx-auto mb-4 w-32 h-32 object-cover rounded-full scroll-fade">
                     <h3 class="text-xl font-semibold mb-2">Accessories</h3>
                     <p>Everything you need from grinders to coffee makers.</p>
                 </div>
@@ -166,29 +163,10 @@
 
     <!-- Footer -->
     <footer class="bg-orange-950 py-6 text-center text-white">
-        <p>&copy; 2025 Coffee Shop. All rights reserved.</p>
+        <div class="year p-3">
     </footer>
 
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuClose = document.getElementById('menu-close');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        menuClose.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-        });
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-    </script>
+    <script src="script.js"> </script>
 
 </body>
 
