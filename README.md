@@ -25,6 +25,8 @@ A clean and responsive **Tailwind CSS** landing page design for a coffee shop we
 └── logo.png
 └── README.md
 └── robusta.jpeg
+└── script.js
+└── styles.css
 ```
 
 ## 🚀 Technologies Used
